@@ -1,0 +1,23 @@
+<head>
+
+    <title>Twitter Lexile Score Checker</title>
+</head>
+
+<body>
+    <h2>Twitter Lexile Score Tool<h2>
+    
+            <form action="{{ url_for ('find_lexile') }}" method="post">
+                <p style="font-size:80%";>
+                Enter Username:
+                </p>
+                <input type="text" name="username" /><br />
+                <input type="submit" value="Submit!" />
+            </form>
+
+            <div id='foo'>
+                <br>
+                <div class="row">
+                    {{ result_text }}
+                </div>
+</body>
+</html>
